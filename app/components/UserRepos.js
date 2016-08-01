@@ -1,6 +1,6 @@
 import React from 'react';
 
-var UserRepos = React.createClass({
+const UserRepos = React.createClass({
 	getInitialState: function() {
 		return {
 			reposCount: 0
@@ -10,7 +10,7 @@ var UserRepos = React.createClass({
 		this.setState({reposCount: props.repos.length});
 	},
 	render: function() {
-		var repos = this.props.repos.map(function(repo, key) {
+		let repos = this.props.repos.map(function(repo, key) {
 			return (
 				<div key={key} className="thumbnail">
 	          		<div className="caption">
@@ -41,4 +41,4 @@ UserRepos.propTypes = {
 	repos : React.PropTypes.array
 };
 
-module.exports = UserRepos;
+export default UserRepos;

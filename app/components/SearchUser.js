@@ -43,4 +43,5 @@ SearchUser.propTypes = {
 	updateUser: React.PropTypes.func.isRequired,
 	updateRepos: React.PropTypes.func.isRequired
 }
-module.exports = SearchUser;
+
+export default SearchUser;
