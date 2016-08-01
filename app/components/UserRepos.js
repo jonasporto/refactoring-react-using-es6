@@ -25,7 +25,7 @@ class UserRepos extends React.Component{
 	  		          	<p>{repo.description}</p>
 			            <p>
 			              <a href={repo.html_url} className="btn btn-primary" role="button">Repository</a>
-			              <a href={repo.html_url + '/issues'} className="btn btn-default" role="button">Issues ({repo.open_issues}) </a>
+			              <a href={`repo.html_url/${issues}`} className="btn btn-default" role="button">Issues ({repo.open_issues}) </a>
 			            </p>
 	          		</div>
 	        	</div>
