@@ -1,14 +1,18 @@
 import React from 'react';
 
-const UserRepos = React.createClass({
-	getInitialState() {
-		return {
+class UserRepos extends React.Component{
+	
+	constructor(props) {
+		super(props)
+		this.state = {
 			reposCount: 0
 		}
-	},
+	}
+
 	componentWillReceiveProps(props) {
 		this.setState({reposCount: props.repos.length});
-	},
+	}
+
 	render() {
 		const { repos } = this.props;
 		const reposList = repos.map((repo, key) => {
@@ -36,7 +40,7 @@ const UserRepos = React.createClass({
 		);
 
 	}
-});
+}
 
 UserRepos.propTypes = {
 	repos : React.PropTypes.array
