@@ -1,16 +1,16 @@
 import React from 'react';
 
 const UserRepos = React.createClass({
-	getInitialState: function() {
+	getInitialState() {
 		return {
 			reposCount: 0
 		}
 	},
-	componentWillReceiveProps: function(props) {
+	componentWillReceiveProps(props) {
 		this.setState({reposCount: props.repos.length});
 	},
-	render: function() {
-		let repos = this.props.repos.map(function(repo, key) {
+	render() {
+		let repos = this.props.repos.map((repo, key) => {
 			return (
 				<div key={key} className="thumbnail">
 	          		<div className="caption">
