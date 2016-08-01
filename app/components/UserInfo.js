@@ -1,6 +1,5 @@
-var React = require('react');
-
-var UserRepos = require('./UserRepos')
+import React from 'react';
+import UserRepos from './UserRepos';
 
 function UserInfo(props) {
 	var userInfo = props.user ? 
